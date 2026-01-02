@@ -40,10 +40,10 @@ export default function Home() {
       <div className="min-h-screen px-4 py-6 md:px-10 md:py-8 flex flex-col gap-4 bg-black/20 text-white">
         
         {/* ROW ATAS */}
-        <div className="flex flex-col font-mono md:flex-row items-start justify-between gap-4 md:gap-8">
+        <div className="flex flex-col font-mono md:flex-rowitems-start justify-between gap-4 md:gap-8">
           
           {/* Nickname */}
-          <div className="w-full md:w-1/3 p-4 md:p-5 flex gap-4">
+          <div className="w-full md:w-1/3 p-4 md:p-5 bg-white/5 backdrop-blur-md rounded-xl p-4 flex gap-4">
             <img
               src="/pp.jpg"
               alt="Profile"
@@ -74,15 +74,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-[10px] md:text-sm mt-3 text-gray-300 text-start md:ml-2 space-y-1 leading-tight">
-              <h2>= Harun Putrawan</h2>
-              <h2>= Kedondong Lampung</h2>
+            <div className="text-[10px] bg-transparent font-bold md:text-sm mt-3 text-gray-300 text-start md:ml-2 space-y-1 leading-tight">
+              <h2>= Zidane Avicenna</h2>
+              <h2>= Bandar Lampung</h2>
               <h2>= 23-07-2005</h2>
               <h2>= SMA 1 Lampung</h2>
             </div>
 
             {/* MUSIC PLAYER */}
-            <div className="flex justify-start mt-5">
+            <div className="flex justify-start mt-5 ">
               <button
                 onClick={() => {
                   const audio = document.getElementById("bg-music") as HTMLAudioElement;
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
 
           {/* CAROUSEL / FAV HERO */}
-          <div className="w-1/2 md:w-6/12 mt-0 font-mono p-2 md:p-6 text-center">
+          <div className="w-1/2 md:w-6/12 mt-0 font-mono p-2 md:p-6 bg-black/30 rounded-xl p-4 text-center">
             <div className="flex justify-center mb-2 md:mb-5">
               <h1 className="text-sm md:text-xl font-semibold">FAV HERO</h1>
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
 
           {/* TEKS DI BAWAH */}
-          <p className="text-sm text-gray-300 font-mono text-justify leading-relaxed">
+          <p className="text-sm text-gray-300 font-mono bg-black/30 rounded-xl p-4 text-justify leading-relaxed">
             Jungler adalah role yang bertugas mengontrol area hutan, mengambil objektif seperti Turtle dan Lord,
             serta melakukan ganking ke lane. Jungler yang baik harus punya mobilitas tinggi, peka terhadap map,
             dan mampu bekerja sama dengan tim untuk mengubah jalannya permainan.
